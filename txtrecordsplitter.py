@@ -1,3 +1,4 @@
+# split your base64 script into dns txt record compatible chunks so you can fetch them on a machine where internet is not allowed but dns still is. 
 import sys
 
 if (len(sys.argv) != 3):
